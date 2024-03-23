@@ -1,0 +1,25 @@
+# /Web/assets/scss/custom.scss
+//在小螢幕上顯示內文toc
+@media (max-width: 1024px) {
+  .toc--inline {
+      display: block;
+  }
+}
+
+//在大螢幕上隱藏內文toc
+@media (min-width: 1024px) {
+  .toc--inline {
+      display: none;
+  }
+}
+
+//內文toc樣式
+.toc--inline {
+    background-color: var(--blockquote-background-color); 
+    margin-left: calc((var(--card-padding)) * -1); 
+    margin-right: calc((var(--card-padding)) * -1); 
+    padding-left: var(--card-padding);
+    padding-right: var(--card-padding);
+    padding-top: var(--card-padding);
+    padding-bottom: var(--card-padding);
+}
