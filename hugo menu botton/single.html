@@ -1,4 +1,5 @@
 /*add after {{ define "main" }}, before {{ define "right-sidebar" }}*/
+
 {{ define "left-sidebar" }}
 {{ if (.Scratch.Get "TOCEnabled") }}
         <button type="button" id="left-menu" style="position: sticky;top: 20px;z-index: 1000;" aria-label="{{ T `toggleMenu` }}">
