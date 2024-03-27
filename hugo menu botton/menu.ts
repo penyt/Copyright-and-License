@@ -1,4 +1,5 @@
 /*add*/
+
 export default function () {
 const leftMenu = document.getElementById('left-menu');
     if (leftMenu) {
