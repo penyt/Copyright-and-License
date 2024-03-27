@@ -1,0 +1,38 @@
+/*add after {{ define "main" }}, before {{ define "right-sidebar" }}*/
+{{ define "left-sidebar" }}
+{{ if (.Scratch.Get "TOCEnabled") }}
+        <button type="button" id="left-menu" style="position: sticky;top: 20px;z-index: 1000;" aria-label="{{ T `toggleMenu` }}">
+            <span>
+                <span>a float left sidebar 選  單</span>
+            </span>
+        </button>
+        <ol class="menu" id="lmenu">
+            {{ $currentPage := . }}
+            {{ range .Site.Menus.main }}
+                {{ $active := or (eq $currentPage.Title .Name) (or ($currentPage.HasMenuCurrent "main" .) ($currentPage.IsMenuCurrent "main" .)) }}
+                <li {{ if $active }} class='current' {{ end }}>
+                    <a href='{{ .URL }}' {{ if eq .Params.newTab true }}target="_blank"{{ end }}>
+                        {{ $icon := default .Pre .Params.Icon }}
+                        {{ if .Pre }}
+                            {{ warnf "Menu item [%s] is using [pre] field to set icon, please use [params.icon] instead.\nMore information: https://docs.stack.jimmycai.com/configuration/custom-menu.html" .URL }}
+                        {{ end }}
+                        {{ with $icon }}
+                            {{ partial "helper/icon" . }}
+                        {{ end }}
+                        <span>{{- .Name -}}</span>
+                    </a>
+                </li>
+            {{ end }}
+            <!--暗色切換在手機端消失了，直接移上來main menu-->
+            {{ if (default false .Site.Params.colorScheme.toggle) }}
+                <li id="dark-mode-toggle">
+                    {{ partial "helper/icon" "toggle-left" }}
+                    {{ partial "helper/icon" "toggle-right" }}
+                    <span>{{ T "darkMode" }}</span>
+                </li>
+            {{ end }}
+        </ol>
+    {{ else }}
+        {{ partial "sidebar/left.html" . }}
+    {{ end }}
+{{ end }}
