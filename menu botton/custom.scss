@@ -1,0 +1,21 @@
+/*add*/
+.main-container .right-sidebar {
+  order: 2;
+  max-width: var(--right-sidebar-max-width);
+  /// Display right sidebar when min-width: lg
+  @include respond(lg) {
+    display: flex;
+  }
+}
+main.main {
+  order: 1;
+  min-width: 0;
+  max-width: 100%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--section-separation);
+  @include respond(md) {
+    padding-top: var(--main-top-padding);
+  }
+}
