@@ -14,4 +14,6 @@
 
 * single.html：加入按鈕及選單內容，抓 /layouts/partials/sidebar/left.html 裡面的 main-menu 部分，沒什麼額外的特別配置
 
-稍微麻煩了一點。但其實都是拿現成的東西改一改加上去而已
+稍微麻煩了一點，但其實都是拿現成的東西改一改加上去而已
+  
+效果：https://myw.penli.quest/p/big-sky-ground/
