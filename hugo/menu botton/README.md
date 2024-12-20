@@ -18,3 +18,12 @@
   
 效果：https://li.penli.quest/p/big-sky-ground/  
 
+# LICENSE
+
+This project is based on the [Hugo Stack Theme](https://github.com/CaiJimmy/hugo-theme-stack), 
+which is licensed under the GNU General Public License, version 3 (GPL-3.0).
+
+All modifications and additions to this project are also distributed under the GPL-3.0 License.
+
+The full text of the GNU General Public License is included below.  
+  
