@@ -25,5 +25,5 @@ which is licensed under the GNU General Public License, version 3 (GPL-3.0).
 
 All modifications and additions to this project are also distributed under the GPL-3.0 License.
 
-The full text of the GNU General Public License is included below.  
+The full text of the GNU General Public License is included in the file "LICENSE".  
   
