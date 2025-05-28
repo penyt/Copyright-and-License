@@ -12,4 +12,4 @@ Usage Terms:
 All rights are strictly reserved.
 
 ## hugo 資料夾
-資料夾中有附上一些我自行修改 hugo theme stack 主題的部分，資料夾裡面有對應的 LICENSE
+資料夾中有附上一些我自行修改 hugo theme stack 主題的部分 code，資料夾裡面有對應的 LICENSE
