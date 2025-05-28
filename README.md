@@ -1,6 +1,3 @@
-# 放一些網頁的東西
-我的網頁： https://li.penli.quest/
-
 # COPYRIGHT
 使用條款：
 - [LOGO](https://github.com/penyt/penli-web-content/tree/main/LOGO) 中之圖片為 penyt 專屬使用。
